@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- CSS -->
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+	<!-- Material icons -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+	<title>APP - Nome do carro</title>
+</head>
+
+<body>
+	<div class="container">
+		<!-- barra de menu -->
+		<div class="row">
+			<div class="col-md-12 tit-bar">
+				<nav class="navbar">
+					<span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg width="25" height="25">
+                  <path d="M0,5 30,5" stroke="#C4C4C4" stroke-width="3"/>
+                  <path d="M0,14 30,14" stroke="#C4C4C4" stroke-width="3"/>
+                  <path d="M0,23 30,23" stroke="#C4C4C4" stroke-width="3"/>
+              </svg>
+            </a>
+          </span>
+
+					<ul class="navbar-nav">
+						<li class="tit-screen"><a href="#">Nome do carro</a></li>
+					</ul>
+					<span>
+						<a href="mycar.html" class="bar-icons"><i class="material-icons">edit</i></a>
+						<a href="#" onclick="showModal()" data-toggle="modal" data-target="#exampleModal" class="bar-icons" style="margin-left: 10px"><i class="material-icons">delete</i></a>
+		  		</span>
+				</nav>
+			</div>
+		</div>
+		<!-- ./row -->
+
+		<!-- menu -->
+		<div id="side-menu" class="side-nav">
+			<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+			<a href="#">
+				<div class="user-image"></div>
+			</a>
+			<a href="#">
+				<p class="user-name">Fulano</p>
+			</a>
+			<a href="index.html"><i class="material-icons">
+room
+</i> Alugar</a>
+			<a href="car.html"><i class="material-icons">
+directions_car
+</i> Meu carro</a>
+			<a href="myaccount.html"><i class="material-icons">
+person
+</i> Minha conta</a>
+			<hr>
+			<a href="#"><i class="material-icons">
+share
+</i> Compartilhar</a>
+			<a href="ajuda.html"><i class="material-icons">
+help
+</i> Ajuda</a>
+			<hr>
+			<p class="ver">Versão</p>
+			<p class="versao">1.0.0</p>
+		</div>
+		<!-- ./side-menu -->
+		<br>
+		
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<img src="img/card-1.jpg" alt="Card 1">
+					<div class="container">
+						<h4><b>Nome do carro</b></h4>
+						<p>Descrição do carro</p>
+						<br>
+						<table class="table">
+							<tr class="table-primary">
+								<th colspan="2" class="text-center">Dados cadastrados</th>
+							</tr>
+							<tr>
+								<td class="text-center"><b>Marca: </b></td>
+								<td class="text-center">Chevrolet</td>
+							</tr>
+							<tr>
+								<td class="text-center"><b>Combustível: </b></td>
+								<td class="text-center">Flex</td>
+							</tr>
+							<tr>
+								<td class="text-center"><b>Modelo: </b></td>
+								<td class="text-center">Prisma</td>
+							</tr>
+							<tr>
+								<td class="text-center"><b>Portas: </b></td>
+								<td class="text-center">4</td>
+							</tr>
+							<tr>
+								<td class="text-center"><b>Ano: </b></td>
+								<td class="text-center">2019</td>
+							</tr>
+							<tr>
+								<td class="text-center"><b>Cor: </b></td>
+								<td class="text-center">Prata</td>
+							</tr>
+							<tr>
+								<td class="text-center"><b>Placa: </b></td>
+								<td class="text-center">JUR-9625</td>
+							</tr>
+							<tr>
+								<td class="text-center"><b>Km: </b></td>
+								<td class="text-center">200</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!-- ./card -->
+			</div>
+		</div>
+		<!-- ./row -->
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+				<a href="car.html" class="icon-link"><i class="material-icons">arrow_back_ios
+				</i></a>
+			</div>
+		</div>
+		<div class="box-search"></div>
+		<div class="background-box-search">
+			<input type="text" placeholder="Digite algo..." class="search-field">
+		</div>
+	</div>
+	<!-- ./container -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Deseja apagar este veículo?</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+					<button type="button" class="btn btn-danger">Apagar</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script>
+		function openSlideMenu() {
+			document.getElementById('side-menu').style.width = '250px';
+			document.getElementById('main').style.marginLeft = '250px';
+		}
+
+		function closeSlideMenu() {
+			document.getElementById('side-menu').style.width = '0';
+			document.getElementById('main').style.marginLeft = '0';
+		}
+
+		$('#myModal').on('shown.bs.modal', function() {
+			$('#myInput').focus();
+		});
+
+		function showModal() {
+			$('#myModal').modal('show');
+		}
+	</script>
+</body>
+
+</html>

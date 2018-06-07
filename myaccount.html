@@ -1,0 +1,239 @@
+﻿<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <title>APP - Minha conta</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- barra de menu -->
+        <div class="row">
+            <div class="col-md-12 tit-bar">
+                <nav class="navbar">
+                    <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+              <svg width="25" height="25">
+                  <path d="M0,5 30,5" stroke="#C4C4C4" stroke-width="3"/>
+                  <path d="M0,14 30,14" stroke="#C4C4C4" stroke-width="3"/>
+                  <path d="M0,23 30,23" stroke="#C4C4C4" stroke-width="3"/>
+              </svg>
+            </a>
+          </span>
+
+                    <ul class="navbar-nav">
+                        <li class="tit-screen"><a href="#">Minha conta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- ./row -->
+
+        <!-- menu -->
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <a href="#">
+                <div class="user-image"></div>
+            </a>
+            <a href="#">
+                <p class="user-name">Fulano</p>
+            </a>
+            <a href="index.html"><i class="material-icons">
+room
+</i> Alugar</a>
+            <a href="car.html"><i class="material-icons">
+directions_car
+</i> Meu carro</a>
+            <a href="myaccount.html"><i class="material-icons">
+person
+</i> Minha conta</a>
+            <hr>
+            <a href="#"><i class="material-icons">
+share
+</i> Compartilhar</a>
+            <a href="ajuda.html"><i class="material-icons">
+help
+</i> Ajuda</a>
+            <hr>
+            <p class="ver">Versão</p>
+            <p class="versao">1.0.0</p>
+        </div>
+        <!-- ./side-menu -->
+        <br>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="conta">
+                    <img src="img/perfil.png" class="perfil" /></div>
+            </div>
+            <div class="col-md-6">
+                <h1>Fulano da Silva</h1>
+                <a href="#">
+                    <h3><i class="material-icons">camera_alt</i>Editar foto</h3>
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+
+                <form class="form-horizontal">
+                    <fieldset>
+                        <h3> <i class="material-icons">add_circle</i> Informações básicas e de contato</h3>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textinput">Nome</label>
+                            <div class="col-md-12">
+                                <input id="nome" name="nome" type="text" class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textinput">Sobrenome</label>
+                            <div class="col-md-12">
+                                <input id="sobrenome" name="sobrenome" type="text" class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textinput">Data de nascimento</label>
+                            <div class="col-md-12">
+                                <input id="dataNascimento" name="dataNascimento" type="text" class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="selectbasic">Sexo</label>
+                            <div class="col-md-12">
+                                <select id="sexo" name="sexo" class="form-control">
+      									<option value="masculino">Masculino</option>
+      									<option value="Feminino">Feminino</option>
+    								</select>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textinput">Telefone</label>
+                            <div class="col-md-12">
+                                <input id="telefone" name="telefone" type="text" class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textinput">Celular</label>
+                            <div class="col-md-12">
+                                <input id="celular" name="celular" type="text" class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+                <form class="form-horizontal">
+                    <h3> <i class="material-icons">add_circle</i> Endereço</h3>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-12 control-label" for="textinput">Endereço</label>
+                        <div class="col-md-12">
+                            <input id="endereco" name="endereco" type="text" class="form-control input-md" required="">
+                        </div>
+                        <div class="form-goup">
+                            <label class="col-md-12 control-label" for="textinput">Número</label>
+                            <div class="col-md-12">
+                                <input id="numero" name="numero" type="text" class="form-control input-md" required="">
+                            </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textinput">Bairro</label>
+                            <div class="col-md-12">
+                                <input id="bairro" name="bairro" type="text" class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textinput">Cidade</label>
+                            <div class="col-md-12">
+                                <input id="cidade" name="cidade" type="text" class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="selectbasic">Estado</label>
+                            <div class="col-md-12">
+                                <select id="estado" name="estado" class="form-control">
+      									<option value="">Selecione um estado</option>
+									<option value="SP">SP</option>
+    								</select>
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textinput">País</label>
+                            <div class="col-md-12">
+                                <input id="país" name="país" type="text" class="form-control input-md" required="">
+                            </div>
+                        </div>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-12 control-label" for="textinput">CEP</label>
+                            <div class="col-md-12">
+                                <input id="cep" name="cep" type="text" class="form-control input-md" required="">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <button class="btn btn-primary">Salvar alterações</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ./container -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+            document.getElementById('main').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+            document.getElementById('main').style.marginLeft = '0';
+        }
+
+    </script>
+</body>
+
+</html>
