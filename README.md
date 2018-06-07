@@ -6,7 +6,7 @@
 O sistema foi criado como projeto acadêmico, para conclusão da matéria de IHC do curso Análise e Desenvolvimento de Sistemas na Faculdade de Tecnologia de Itu, turma do 3º Semestre de 2018.
 O objetivo da aplicação é permitir que o usuário alugue um carro em sua região ou alugue seu carro para alguém próximo, definindo seu próprio preço.
 
-![](inicio.png)
+![](inicio.PNG)
 
 ## Contato
 
